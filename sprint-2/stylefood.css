@@ -1,0 +1,55 @@
+#foodgrid{
+    display: grid;
+    grid-template: "a b c"
+                   "d e f"
+                   "g h i";
+    grid-gap: 25px;
+    margin-left: 8%;
+    font-size: 120%;
+}
+h1{
+    text-align: center;
+}
+#foodgrid div:nth-child(1){
+    grid-area: a;
+}
+#foodgrid div:nth-child(2){
+    grid-area: b;
+}
+#foodgrid div:nth-child(3){
+    grid-area: c;
+}
+#foodgrid div:nth-child(4){
+    grid-area: d;
+}
+#foodgrid div:nth-child(5){
+    grid-area: e;
+}
+#foodgrid div:nth-child(6){
+    grid-area: f;
+}
+#foodgrid div:nth-child(7){
+    grid-area: g;
+}
+#foodgrid div:nth-child(8){
+    grid-area: h;
+}
+#foodgrid div:nth-child(9){
+    grid-area: i;
+}
+img{
+    width: 60%;
+}
+em{
+    font-size: 13px;
+}
+button{
+    background-color: rgb(3, 3, 58);
+    border: 1px solid rgb(3, 3, 58);
+    padding: 1%;
+    margin-left: 80%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

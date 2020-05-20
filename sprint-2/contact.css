@@ -1,0 +1,36 @@
+body{
+    color: #c7c7c7;
+    text-align: center;
+}
+#div1{
+    background-color:#555555;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 10%;
+    padding:2%
+}
+.class{
+    display: flex;
+}
+.class div{
+    flex-basis:50% ;
+}
+img{
+    width: 5%;
+    
+}
+.class .div{
+    flex-basis: 4%;
+    margin-left: 10px;
+}
+.class .div:nth-child(1){
+    margin-left: 43%;
+}
+.class2{
+    width: 100%;
+}
+@media (max-width:700px){
+    .class .div{
+    
+    }
+}

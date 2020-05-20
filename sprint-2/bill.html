@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bill
+        </title>
+        <link rel="stylesheet" href="bill.css">
+    </head>
+    <body>
+        <h1>Bill Generation</h1>
+        <div id="grid">
+            <div>
+                Name<br><input id="name" type="text" placeholder="Enter Your Name"><br><br>
+                Mobile Number<br><input id="number" type="text" placeholder="Enter Your mobile Number"/><br><br>
+                Date<br><input id="date" type="text" placeholder="Enter the date (eg. 14th may)"/><br><br>
+                Day<br><select id="day">
+                    <option value="">-----</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select><br><br>
+                Enter Items : <br>Non-Vegitarian<br><Input type="text" id="non" placeholder="(eg.chicken-biriyani)"/><br><br>
+                Quantity<br><input id="nonQuan" type="number" placeholder="(eg.2)"/><br><br>
+                Vegitarian<br><input type="text" id="veg" placeholder="(eg.idly)"/><br><br>
+                Quantity<br><input id="vegQuan" type="number" placeholder="(eg.2)"/><br><br>
+                Juice or Milk Shakes<br><input type="text" id="juice" placeholder="(eg.rose-milk)"/><br><br>
+                Quantity<br><input id="juiceQuan" type="number" placeholder="(eg.2)"/><br><br>
+                <button id="click">Click to generate Bill</button>
+            </div>
+            <div id="bill">
+
+            </div>
+        </div>
+
+        <script src="bill.js"></script>
+    </body>
+</html>

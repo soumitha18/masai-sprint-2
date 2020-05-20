@@ -1,0 +1,17 @@
+html{
+	height: 100%;
+}
+body{
+	background-image: url(resources/back.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+button{
+    background-color: rgb(3, 3, 58);
+    border: 1px solid rgb(3, 3, 58);
+    padding: 10px;
+    margin-left: 45%;
+    color: white;
+    margin-top: 10%;
+}

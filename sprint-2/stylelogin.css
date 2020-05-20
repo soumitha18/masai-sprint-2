@@ -1,0 +1,25 @@
+.divid{
+    background-color: whitesmoke;
+    width: 34%;
+    padding: 10px;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+a{
+	color: rgb(3, 3, 58);
+	text-decoration: none;
+}
+button{
+    background-color: rgb(3, 3, 58);
+    border: 1px solid rgb(3, 3, 58);
+}
+button>a{
+    color: white;
+}
+th{
+	color: rgb(3, 3, 58);
+}
+h2{
+    color: rgb(3, 3, 58);
+    text-align: center;
+}

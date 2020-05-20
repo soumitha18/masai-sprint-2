@@ -1,0 +1,55 @@
+body{
+    color: rgb(3, 3, 58);
+}
+h1{
+    text-align: center;
+}
+#grid{
+    display: grid;
+    grid-template: "a b b";
+    grid-gap: 5%
+}
+#grid > div{
+    background-color: whitesmoke;
+    padding: 5%;
+}
+#grid > div:nth-child(1){
+    margin-left: 15%;
+}
+input{
+   margin-top: 0px;
+   width: 70%;
+}
+select{
+    width: 70%;
+    background-color: rgb(3, 3, 58);
+    color: white;
+}
+button{
+    background-color: rgb(3, 3, 58);
+    border: 1px solid rgb(3, 3, 58);
+    color: white;
+    padding: 0.5%;
+    width: 70%;
+}
+.non{
+    width: 40%;
+}
+#grid > div:nth-child(2){
+    padding: 2%;
+}
+#total{
+    background-color: rgb(3, 3, 58);
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+}
+#printbtn{
+    background-color: rgb(3, 3, 58);
+    border: 1px solid rgb(3, 3, 58);
+    color: white;
+    padding: 1%;
+    margin-left: 80%;
+    width: auto;
+}
