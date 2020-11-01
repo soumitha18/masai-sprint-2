@@ -5,7 +5,7 @@ var arrveg = ["meals", "idly", "dosa", "chapathi", "puri", "parota", "upma", "po
 var vegamt = [300, 70, 70, 100, 120, 150, 100, 150, 70]
 
 var juices = ["rose-milk", "chocolate-milk", "coconut-milk", "milk", "coffiee", "tea", "apple", "strawberry", "watermelon"]
-var juiceamt = [30, 30, 30, 15, 20, 20, 40, 40, 40] 
+var juiceamt = [30, 30, 30, 15, 20, 20, 40, 40, 40]
 
 var total = 0
 var vegtotal = 0
@@ -15,7 +15,7 @@ var tax = 0
 
 var btn = document.getElementById("click")
 
-function generate(){
+function generate() {
 
     var div = document.getElementById("bill")
 
@@ -36,86 +36,86 @@ function generate(){
     var jucQ = document.getElementById("juiceQuan").value
 
     var na = document.createElement("p")
-    na.innerHTML = "User Name : "+name
+    na.innerHTML = "User Name : " + name
     div.appendChild(na)
 
     var num = document.createElement("p")
-    num.innerHTML = "Mobile Number : "+number
+    num.innerHTML = "Mobile Number : " + number
     div.appendChild(num)
 
     var dat = document.createElement("p")
-    dat.innerHTML = "Date : "+date
+    dat.innerHTML = "Date : " + date
     div.appendChild(dat)
 
     var da = document.createElement("p")
-    da.innerHTML = "Day : "+day
+    da.innerHTML = "Day : " + day
     div.appendChild(da)
 
-    for(i=0; i<9; i++){
-        if(non == arrnon[i]){
-            nontotal += nonamt[i]*Number(nonQ)
+    for (i = 0; i < 9; i++) {
+        if (non == arrnon[i]) {
+            nontotal += nonamt[i] * Number(nonQ)
         }
     }
 
-    for(j=0; j<9; j++){
-        if(veg == arrveg[j]){
-            vegtotal += vegamt[j]*Number(vegQ)
+    for (j = 0; j < 9; j++) {
+        if (veg == arrveg[j]) {
+            vegtotal += vegamt[j] * Number(vegQ)
         }
     }
 
-    for(k=0; k<9; k++){
-       if(juc == juices[k]){
-           juctotal += juiceamt[k]*Number(jucQ)
-       } 
+    for (k = 0; k < 9; k++) {
+        if (juc == juices[k]) {
+            juctotal += juiceamt[k] * Number(jucQ)
+        }
     }
 
     total = vegtotal + nontotal + juctotal
 
-    tax = total * (5/100)
+    tax = total * (5 / 100)
 
     total = total + tax
 
-    if(day == "Friday"){
-        
+    if (day == "Friday") {
+
         var h2 = document.createElement("h2")
         h2.innerHTML = "Friday Fun"
         div.appendChild(h2)
 
         var hr = document.createElement("hr")
         div.appendChild(hr)
-    
+
     }
-    else{
+    else {
 
         var hr = document.createElement("hr")
         div.appendChild(hr)
-    
+
     }
 
-    if(non != ""){
+    if (non != "") {
         var nonveg = document.createElement("p")
-        nonveg.innerHTML = "Non-Veg : " + non +" - " + nonQ + " = " + nontotal + "/-"
+        nonveg.innerHTML = "Non-Veg : " + non + " - " + nonQ + " = " + nontotal + "/-"
         div.appendChild(nonveg)
     }
-    if(veg != ""){
+    if (veg != "") {
         var vegt = document.createElement("p")
-        vegt.innerHTML = "Veg : "+ veg + " - " + vegQ + " = " + vegtotal + "/-"
+        vegt.innerHTML = "Veg : " + veg + " - " + vegQ + " = " + vegtotal + "/-"
         div.appendChild(vegt)
     }
 
-    if(juc != ""){
+    if (juc != "") {
         var juct = document.createElement("p")
-        juct.innerHTML = "Juices : "+ juc + " - " + jucQ + " = "+ juctotal +"/-"
+        juct.innerHTML = "Juices : " + juc + " - " + jucQ + " = " + juctotal + "/-"
         div.appendChild(juct)
     }
 
     var taxA = document.createElement("p")
-    taxA.innerHTML = "Tax : "+ tax + "/-"
+    taxA.innerHTML = "Tax : " + tax + "/-"
     div.appendChild(taxA)
 
-    if(day == "Friday"){
+    if (day == "Friday") {
 
-        var dis = Math.floor(total * (10/100))
+        var dis = Math.floor(total * (10 / 100))
 
         var discount = document.createElement("p")
         discount.innerHTML = "Friday Fun Discount : " + dis + "/-"
@@ -125,8 +125,8 @@ function generate(){
     }
 
     var divTotal = document.createElement("div")
-    divTotal.setAttribute("id","total")
-    divTotal.innerHTML = "Total : "+ total + "/-" 
+    divTotal.setAttribute("id", "total")
+    divTotal.innerHTML = "Total : " + total + "/-"
     div.appendChild(divTotal)
 
     var br = document.createElement("br")
@@ -147,8 +147,6 @@ function generate(){
     document.getElementById("vegQuan").value = ""
     document.getElementById("juice").value = ""
     document.getElementById("juiceQuan").value = ""
-
-    //alert("sdflkj")
 }
 
-btn.addEventListener("click",generate)
+btn.addEventListener("click", generate)
